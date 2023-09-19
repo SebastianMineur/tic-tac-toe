@@ -1,0 +1,6 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <rect transform="rotate(45 50,50) " id="svg_1" height="20" width="100" y="40" x="0" stroke-width="0" fill="lightgoldenrodyellow"/>
+        <rect transform="rotate(135 50,50) " id="svg_2" height="20" width="100" y="40" x="0" stroke-width="0" fill="lightgoldenrodyellow"/>
+    </g>
+</svg>

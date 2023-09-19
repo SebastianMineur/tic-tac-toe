@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+
+	<script src="https://kit.fontawesome.com/1652567825.js" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Tic Tac Toe</h1>
+	</header>
+
+	<main>
+		<div class="menu">
+			<h2>Pick your players:</h2>
+			
+			<div class="options">
+				<img src="assets/img/cross-dark.svg">
+				<span></span>
+				<img src="assets/img/circle-dark.svg">
+
+				<select name="player1" id="player1">
+					<option value="player">Player</option>
+					<option value="cpu">CPU</option>
+				</select>
+
+				<span>VS</span>
+
+				<select name="player2" id="player2">
+					<option value="player">Player</option>
+					<option value="cpu">CPU</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="game hidden">
+			<div class="board">
+				<button class="square" id="0"></button>
+				<button class="square" id="1"></button>
+				<button class="square" id="2"></button>
+				<button class="square" id="3"></button>
+				<button class="square" id="4"></button>
+				<button class="square" id="5"></button>
+				<button class="square" id="6"></button>
+				<button class="square" id="7"></button>
+				<button class="square" id="8"></button>
+			</div>
+
+			<div class="end-card hidden">
+				<img src="assets/img/cross-light.svg">
+				<p>Wins</p>
+			</div>
+		</div>
+	</main>
+
+	<section>
+		<div class="btn-section">
+			<div class="row-left">
+				<button class="btn btn-red btn-large hidden" id="quit" title="Quit game">Quit</button>
+				<button class="btn" id="upload" title="Upload AI data"><i class="fas fa-upload"></i></button>
+				<button class="btn" id="download" title="Download AI data"><i class="fas fa-download"></i></button>
+			</div>
+			<div class="row-mid">
+				<button class="btn hidden" id="pause" title="Pause game"><i class="fas fa-pause"></i></button>
+				<div class="btn-group hidden">
+					<button class="btn" id="play" title="Run game"><i class="fas fa-play"></i></button>
+					<button class="btn" id="forward" title="Step forward"><i class="fas fa-step-forward"></i></button>
+				</div>
+			</div>
+			<div class="row-right">
+				<button class="btn btn-green btn-large" id="start" title="Start game">Start</button>
+				<button class="btn btn-green btn-large hidden" id="restart" title="Restart game">Restart</button>
+			</div>
+		</div>
+
+		<footer>
+				<p>&copy; Sebastian Mineur 2020</p>
+		</footer>
+	</section>
+
+	<script src="assets/js/tictactoe.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
